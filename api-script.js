@@ -8,9 +8,8 @@ request.onload = function () {
   var parseData = JSON.parse(response);
   //console.log(parseDate)
   var imageUrl = parseData.data.data.images.original.url;
-  
   imageTag = "<img src='" + imageUrl + “' >”;
-document.getElementById("holder").innerHTML = imageTag;
+  document.getElementById("holder").innerHTML = imageTag;
 };
 
 request.send();
